@@ -1,0 +1,78 @@
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100;
+    padding: 20px 100px;
+    background: red;
+    display: flex;
+}
+.navigation a {
+    position:relative;
+    font: size 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+a{
+    text-decoration: none;
+}
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 340px;
+    background:transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+
+
+}
+body {
+    background-image: url("https://c0.wallpaperflare.com/preview/948/576/922/quiz-exam-icon-button.jpg");
+
+background-size: 100%; 
+background-position: center; 
+background-repeat: no-repeat; 
+height: 0vh; /* Set the height to 100% of the viewport height */
+margin: 0; /* Remove default margin */
+
+}
+.USERNAME{
+  margintop:10rem;
+  width:40cm;
+  height:1000cm;
+}
+.button-label {
+    display: inline-block;
+    font-size: 10px;
+    padding: 10px 20px;
+    background-color: #000000; 
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed; 
+    top: 300px;
+    left:150px;
+    box-shadow: 0 2px 25px rgba(255, 51, 0, 0.5);
+    transition: transform 0.2 ease;
+}
+.button-label:active{
+    transform: scale(0.96);
+}
+#login-form
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.login
+{
+    justify-content: space-between;
+}

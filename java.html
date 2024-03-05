@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <h1>JAVA</h1>
+
+    <form action="submit_quiz.php" method="POST">
+        <div class="question">
+            <p>1.What is inheritance in Java, and how does it promote code reusability?</p>
+            <input type="radio" name="question1" value="a"> <label>a) Inheritance is a mechanism in Java where a new class inherits properties and behavior from an existing class. It promotes code reusability by allowing the new class to reuse code from the existing class.</label><br>
+            <input type="radio" name="question1" value="b"> <label>Inheritance allows a class to inherit properties and behavior from multiple classes simultaneously.</label><br>
+            <input type="radio" name="question1" value="c"> <label>Inheritance is not supported in Java.</label><br>
+            <input type="radio" name="question1" value="d"> <label>Inheritance is used to create completely new classes in Java.</label><br>
+        </div>
+
+        <div class="question">
+            <p>2.Explain the concept of method overloading and method overriding in Java with examples.</p>
+            <input type="radio" name="question2" value="a"> <label>a) Method overloading is the process of defining multiple methods in a class with the same name but different parameter lists. Method overriding occurs when a subclass provides a specific implementation of a method that is already provided by its superclass.</label><br>
+            <input type="radio" name="question2" value="b"> <label>Method overloading and method overriding are the same concepts in Java.</label><br>
+            <input type="radio" name="question2" value="c"> <label>Method overloading is used to override methods in Java.</label><br>
+            <input type="radio" name="question2" value="d"> <label>Method overloading is the process of defining multiple methods in a class with the same name and parameter lists.</label><br>
+        </div>
+        <div class="question">
+            <p>3.What is the difference between abstract classes and interfaces in Java?</p>
+            <input type="radio" name="question1" value="a"> <label>a) Abstract classes can have method implementations, while interfaces cannot. Abstract classes can also have constructors, while interfaces cannot.</label><br>
+            <input type="radio" name="question1" value="b"> <label>Abstract classes and interfaces are the same concepts in Java.</label><br>
+            <input type="radio" name="question1" value="c"> <label>Abstract classes cannot have method implementations, while interfaces can. Abstract classes can also have constructors, while interfaces cannot.</label><br>
+            <input type="radio" name="question1" value="d"> <label> Abstract classes and interfaces cannot have method implementations in Java.</label><br>
+        </div>
+
+        <div class="question">
+            <p>4.How do you handle exceptions in Java using try-catch blocks?</p>
+            <input type="radio" name="question2" value="a"> <label>a) Exceptions in Java are handled using try-catch blocks. Code that may throw an exception is placed within the try block, and code to handle the exception is placed within the catch block.</label><br>
+            <input type="radio" name="question2" value="b"> <label>Exceptions in Java are automatically handled by the compiler.</label><br>
+            <input type="radio" name="question2" value="c"> <label>Exceptions in Java are handled using if-else statements.</label><br>
+            <input type="radio" name="question2" value="d"> <label> Exceptions in Java are handled using switch statements.</label><br>
+        </div>
+        <div class="question">
+            <p>5.Describe the concept of polymorphism in Java and provide examples of its usage.</p>
+            <input type="radio" name="question1" value="a"><label>a) Polymorphism is the ability of a single method to perform different actions based on the object it is acting upon. It is achieved in Java through method overloading and method overriding. (Correct Answer)
+b) Polymorphism is the ability of a class to inherit properties and behavior from another class.
+c) Polymorphism is not supported in Java.
+d) Polymorphism is the ability of a method to return different data types in Java.</label><br>
+            <input type="radio" name="question1" value="b"> <label></label><br>
+            <input type="radio" name="question1" value="c"> <label></label><br>
+            <input type="radio" name="question1" value="d"> <label></label><br>
+        </div>
+
+        <div class="question">
+            <p>6.What are access modifiers in Java, and how do they control the visibility of variables and methods?</p>
+            <input type="radio" name="question2" value="a"><label>a) Access modifiers in Java are keywords used to specify the accessibility of variables, methods, and classes. They include public, private, protected, and default. They control the visibility of variables and methods by defining who can access them.</label><br>
+            <input type="radio" name="question2" value="b"> <label>Access modifiers in Java are used to define the data type of variables.</label><br>
+            <input type="radio" name="question2" value="c"> <label> Access modifiers in Java are used to define the return type of methods.</label><br>
+            <input type="radio" name="question2" value="d"> <label>Access modifiers in Java are used to define the scope of variables and methods. </label><br>
+        </div>
+        <div class="question">
+            <p>7.Explain the difference between '==', '.equals()', and 'hashCode()' methods in Java.</p>
+            <input type="radio" name="question1" value="a"> <label>a) '==' is used to compare object references, '.equals()' is used to compare object contents, and 'hashCode()' returns a hash code value for the object.</label><br>
+            <input type="radio" name="question1" value="b"> <label>b) '==' is used to compare object contents, '.equals()' is used to compare object references, and 'hashCode()' returns the memory address of the object.</label><br>
+            <input type="radio" name="question1" value="c"> <label>'==' is used to compare object references, '.equals()' is used to compare object contents, and 'hashCode()' returns the memory address of the object.</label><br>
+            <input type="radio" name="question1" value="d"> <label>'==' is used to compare object references, '.equals()' is used to compare object contents, and 'hashCode()' returns a boolean value.</label><br>
+        </div>
+
+        <div class="question">
+            <p>8.What is the 'this' keyword used for in Java, and when would you use it?</p>
+            <input type="radio" name="question2" value="a">  <label>a) The 'this' keyword in Java refers to the current instance of the class. It is used to differentiate between instance variables and parameters with the same name, and to invoke current class methods.</label><br>
+            <input type="radio" name="question2" value="b"> <label> The 'this' keyword is used to create new instances of a class in Java.</label><br>
+            <input type="radio" name="question2" value="c"> <label> The 'this' keyword is used to access static variables and methods in Java.</label><br>
+            <input type="radio" name="question2" value="d"> <label>The 'this' keyword is used to access superclass methods in Java. </label><br>
+        </div>
+        <div class="question">
+            <p>9.How do you implement multithreading in Java, and why is it important?</p>
+            <input type="radio" name="question1" value="a"> <label>a) Multithreading in Java is implemented by extending the Thread class or implementing the Runnable interface. It allows multiple tasks to execute concurrently, improving performance and responsiveness of applications.</label><br>
+            <input type="radio" name="question1" value="b"> <label>Multithreading in Java is implemented using try-catch blocks.</label><br>
+            <input type="radio" name="question1" value="c"> <label> Multithreading in Java is not supported.</label><br>
+            <input type="radio" name="question1" value="d"> <label>Multithreading in Java is implemented by using the 'synchronized' keyword.</label><br>
+        </div>
+
+        <div class="question">
+            <p>10.Describe the purpose and usage of Java collections framework. Provide examples of different collection types.</p>
+            <input type="radio" name="question2" value="a"> <label>a) The Java collections framework provides a set of interfaces and classes to store, manipulate, and retrieve groups of objects. It includes interfaces like List, Set, and Map, and classes like ArrayList, HashSet, and HashMap.</label></label><br>
+            <input type="radio" name="question2" value="b"> <label> The Java collections framework is used to define new data types in Java.</label><br>
+            <input type="radio" name="question2" value="c"> <label>The Java collections framework is used to handle exceptions in Java.</label><br>
+            <input type="radio" name="question2" value="d"> <label>The Java collections framework is used to implement multithreading in Java.</label><br>
+        </div>
+
+        <!-- Repeat the above pattern for the remaining questions -->
+    </form>
+<form action="link1.html" >
+<button class="button">Submit</button></form>
+</body>
+</html>

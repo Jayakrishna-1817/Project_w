@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+         .button {
+    position: absolute; /* or relative, fixed, etc. */
+    top: 1410px; /* Adjust this value to move the button vertically */
+    left: 200px; /* Adjust this value to move the button horizontally */
+    background-color:#000000;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <h1>C LANGUAGE</h1>
+
+    <form action="submit_quiz.php" method="POST">
+        <div class="question">
+            <p>1.What is a pointer to a function in C, and how is it declared and used?<p>
+            <input type="radio" name="question1" value="a"> <label>a) A pointer to a function stores the memory address of a function and can be declared using the '*' operator.</label><br>
+            <input type="radio" name="question1" value="b"> <label>A pointer to a function is not possible in C.</label><br>
+            <input type="radio" name="question1" value="c"> <label>A pointer to a function can only be declared using the '&' operator.</label><br>
+            <input type="radio" name="question1" value="d"> <label>A pointer to a function is used to declare global functions.</label><br>
+        </div>
+
+        <div class="question">
+            <p>2.Explain the difference between pass by value and pass by reference in function arguments in C.<p>
+            <input type="radio" name="question2" value="a"> <label>a) Pass by value means passing the actual value of a variable to a function, while pass by reference means passing the memory address of a variable to a function.</label><br>
+            <input type="radio" name="question2" value="b"> <label> Pass by value and pass by reference are the same in C.</label><br>
+            <input type="radio" name="question2" value="c"> <label>Pass by value is used only for integers, while pass by reference is used for other data types.</label><br>
+            <input type="radio" name="question2" value="d"> <label>Pass by value is used for global variables, while pass by reference is used for local variables.</label><br>
+        </div>
+        <div class="question">
+            <p>3.Explain the concept of recursion in C programming. Provide an example.</p>
+            <input type="radio" name="question1" value="a"> <label>a) Recursion is the process of calling a function within itself.</label><br>
+            <input type="radio" name="question1" value="b"> <label>Recursion is not allowed in C programming.</label><br>
+            <input type="radio" name="question1" value="c"> <label> Recursion is the process of defining multiple functions in a single C program.</label><br>
+            <input type="radio" name="question1" value="d"> <label> Recursion is used only for mathematical calculations in C programming.</label><br>
+        </div>
+
+        <div class="question">
+            <p>4.What are the differences between 'malloc()', 'calloc()', 'realloc()', and 'free()' functions in memory management?</p>
+            <input type="radio" name="question2" value="a"> <label>a) 'malloc()' is used to allocate memory, 'calloc()' initializes memory to zero, 'realloc()' resizes allocated memory, and 'free()' deallocates memory.</label><br>
+            <input type="radio" name="question2" value="b"> <label>'malloc()' and 'calloc()' are the same functions.</label><br>
+            <input type="radio" name="question2" value="c"> <label>'realloc()' and 'free()' are the same functions.</label><br>
+            <input type="radio" name="question2" value="d"> <label>'malloc()' and 'realloc()' are used for memory deallocation.</label><br>
+        </div>
+        <div class="question">
+            <p>5.How does the 'volatile' keyword work in C, and when would you use it?</p>
+            <input type="radio" name="question1" value="a"><label>a) The 'volatile' keyword indicates that a variable's value can be changed unexpectedly by external factors, such as hardware.</label><br>
+            <input type="radio" name="question1" value="b"> <label>The 'volatile' keyword prevents a variable's value from being changed.</label><br>
+            <input type="radio" name="question1" value="c"> <label>c) The 'volatile' keyword indicates that a variable cannot be accessed by multiple threads simultaneously.</label><br>
+            <input type="radio" name="question1" value="d"> <label>The 'volatile' keyword is used to declare constant variables.</label><br>
+        </div>
+
+        <div class="question">
+            <p>6.Explain the difference between 'static' and 'extern' keywords in C, particularly in the context of variable scope and linkage.</p>
+            <input type="radio" name="question2" value="a"><label>a) 'static' variables have local scope and internal linkage, while 'extern' variables have global scope and external linkage.</label><br>
+            <input type="radio" name="question2" value="b"> <label>'static' and 'extern' keywords are used interchangeably in C programming.</label><br>
+            <input type="radio" name="question2" value="c"> <label>'static' variables have global scope and external linkage, while 'extern' variables have local scope and internal linkage. </label><br>
+            <input type="radio" name="question2" value="d"> <label> 'static' and 'extern' keywords are used to declare functions in C programming.</label><br>
+        </div>
+        <div class="question">
+            <p>7.What is a memory leak in C, and how can you prevent it?</p>
+            <input type="radio" name="question1" value="a"> <label>a) A memory leak occurs when allocated memory is not deallocated properly, leading to a loss of memory resources.</label><br>
+            <input type="radio" name="question1" value="b"> <label>A memory leak occurs when a program runs out of memory.</label><br>
+            <input type="radio" name="question1" value="c"> <label>A memory leak occurs when memory is deallocated before it is allocated.</label><br>
+            <input type="radio" name="question1" value="d"> <label>A memory leak occurs when memory is allocated but not used.</label><br>
+        </div>
+
+        <div class="question">
+            <p>8.Describe the process of typecasting in C. Provide examples.</p>
+            <input type="radio" name="question2" value="a">  <label>a) Typecasting is the process of converting a variable from one data type to another using type conversion operators.</label><br>
+            <input type="radio" name="question2" value="b"> <label> Typecasting is the process of declaring variables of different data types in C programming.</label><br>
+            <input type="radio" name="question2" value="c"> <label>Typecasting is not possible in C programming. </label><br>
+            <input type="radio" name="question2" value="d"> <label> Typecasting is the process of converting a variable to a string in C programming.</label><br>
+        </div>
+        <div class="question">
+            <p>Explain the concept of bitwise operators in C and provide examples of their usage.</p>
+            <input type="radio" name="question1" value="a"> <label>a) Bitwise operators perform operations on individual bits of operands. Examples include AND, OR, XOR, left shift, and right shift.</label><br>
+            <input type="radio" name="question1" value="b"> <label>Bitwise operators are used to perform arithmetic operations in C programming.</label><br>
+            <input type="radio" name="question1" value="c"> <label>Bitwise operators are used to perform string manipulation in C programming.</label><br>
+            <input type="radio" name="question1" value="d"> <label>Bitwise operators are used to declare boolean variables in C programming.</label><br>
+        </div>
+
+        <div class="question">
+            <p>10.Describe the purpose and functionality of the 'typedef' keyword in C.</p>
+            <input type="radio" name="question2" value="a"> <label>a) The 'typedef' keyword is used to create aliases for existing data types, making code more readable and easier to maintain.</label><br>
+            <input type="radio" name="question2" value="b"> <label>b) The 'typedef' keyword is used to declare global variables in C programming.</label><br>
+            <input type="radio" name="question2" value="c"> <label>c) The 'typedef' keyword is used to define new data types in C programming.</label><br>
+            <input type="radio" name="question2" value="d"> <label>The 'typedef' keyword is used to declare function prototypes in C programming.
+</label><br>
+        </div>
+
+        <!-- Repeat the above pattern for the remaining questions -->
+    </form>
+<form action="link1.html" >
+<button class="button">Submit</button></form>
+</body>
+</html>

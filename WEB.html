@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz with Radio Buttons</title>
+<style>
+.button {
+    position: absolute; /* or relative, fixed, etc. */
+    top: 1100px; /* Adjust this value to move the button vertically */
+    left: 200px; /* Adjust this value to move the button horizontally */
+    background-color:#000000;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2>WEB DEVELOPMENT QUIZ</h2>
+
+
+<!-- Question 1 -->
+<p>1.What does HTML stand for?<p>
+<input type="radio" id="q1a" name="q1" value="Hyper Text Markup Language">
+<label for="q1a">Hyper Text Markup Language</label><br>
+<input type="radio" id="q1b" name="q1" value=" High Tech Machine Learning">
+<label for="q1b">High Tech Machine Learning</label><br>
+
+<input type="radio" id="q1c" name="q1" value="Home Tool Management Language">
+<label for="q1c">Home Tool Management Language</label><br>
+<input type="radio" id="q1d" name="q1" value="Hyperlinks and Text Manipulation Language
+">
+<label for="q1d">Hyperlinks and Text Manipulation Language</label><br>
+
+
+
+<p>2.Which programming language is used for adding interactivity to web pages?</p>
+<input type="radio" id="q2a" name="q2" value="HTML">
+<label for="q2a">HTML</label><br>
+<input type="radio" id="q1b" name="q2" value="CSS">
+<label for="q2b">CSS</label><br>
+<input type="radio" id="q2c" name="q2" value="JavaScript">
+<label for="q2c">JavaScript</label><br>
+<input type="radio" id="q2d" name="q2" value="XML">
+<label for="q2d">XML</label><br>
+
+<!-- Question 2 -->
+<p>3.Which property is used to change the background color of an element in CSS?</p>
+<input type="radio" id="q3a" name="q3" value="color">
+<label for="q3a">color</label><br>
+<input type="radio" id="q3b" name="q3" value="background-color">
+<label for="q3b"> background-color</label><br>
+<input type="radio" id="q3c" name="q3" value="text-color">
+<label for="q3c">text-color</label><br>
+<p>4.Which symbol is used to access an ID in CSS?</p>
+<input type="radio" id="q4a" name="q4" value="#">
+<label for="q4a">#</label><br>
+<input type="radio" id="q4b" name="q4" value=".">
+<label for="q4b">.</label><br>
+<input type="radio" id="q4c" name="q4" value=":">
+<label for="q4c">:</label><br>
+<p>5.What is the purpose of the script tag in HTML?</p>
+<input type="radio" id="q5a" name="q5" value="To link an external CSS file">
+<label for="q5a">To link an external CSS file</label><br>
+<input type="radio" id="q5b" name="q5" value="To link an external JavaScript file">
+<label for="q5b">To link an external JavaScript file</label><br>
+<input type="radio" id="q5c" name="q5" value="To define a client-side script">
+<label for="q5c">To define a client-side script</label><br>
+
+
+
+<p>6.Which function is used to add an event listener in JavaScript?</p>
+<input type="radio" id="q6a" name="q6" value="addEventListener()">
+<label for="q6a">addEventListener()</label><br>
+<input type="radio" id="q6b" name="q6" value=" attachEvent()">
+<label for="q6b"> attachEvent()</label><br>
+<input type="radio" id="q6c" name="q6" value="eventListener()">
+<label for="q6c">eventListener()</label><br>
+
+
+
+<p>7.What is the purpose of the CSS property "display: none;"?</p>
+<input type="radio" id="q7a" name="q7" value=" Hides the element from the page layout">
+<label for="q7a"> Hides the element from the page layout</label><br>
+<input type="radio" id="q7b" name="q7" value="Changes the font style of the element">
+<label for="q7b">Changes the font style of the element</label><br>
+<input type="radio" id="q6c" name="q7" value="Adds a border around the element">
+<label for="qc">Adds a border around the element</label><br>
+
+
+
+<p>8.Which JavaScript method is used to add new items to the end of an array?</p>
+<input type="radio" id="q8a" name="q8" value="push()">
+<label for="q8a">push()</label><br>
+<input type="radio" id="q7b" name="q8" value=" add()">
+<label for="q8b"> add()</label><br>
+<input type="radio" id="q8c" name="q8" value="append()">
+<label for="qc">apend()</label><br>
+
+
+
+<p>9.Which CSS property is used to create space between the element's border and content?</p>
+<input type="radio" id="q6a" name="q6" value="addEventListener()">
+<label for="q6a">addEventListener()</label><br>
+<input type="radio" id="q6b" name="q6" value=" attachEvent()">
+<label for="q6b"> attachEvent()</label><br>
+<input type="radio" id="q6c" name="q6" value="eventListener()">
+<label for="q6c">eventListener()</label><br>
+<form action="link1.html" >
+<button class="button">Submit</button></form>
+
+<script>
+function checkAnswers() {
+  var answers = {
+    'q1': 'Hyper Text Markup Language',
+    'q2' : 'JavaScript'
+    'q3' : 'background-color'
+    'q4' :'#'
+    'q5' : 'To define a client-side script'
+    'q6' : 'addEventListener()'
+    'q7' : 'Hides the element from the page layout'
+    'q8' : 'push()'
+    'q9' : 'padding'
+    };
+
+  var score = 0;
+  var totalQuestions = 0;
+
+  for (var question in answers) {
+    totalQuestions++;
+    var selectedAnswer = document.querySelector('input[name="' + question + '"]:checked');
+    if (selectedAnswer) {
+      if (selectedAnswer.value === answers[question]) {
+        score++;
+      }
+    }
+  }
+
+  var resultMessage = 'You got ' + score + ' out of ' + totalQuestions + ' questions correct.';
+  alert(resultMessage);
+}
+</script>
+
+</body>
+</html>

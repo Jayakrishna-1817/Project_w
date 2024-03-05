@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+         .button {
+    position: absolute; /* or relative, fixed, etc. */
+    top: 1410px; /* Adjust this value to move the button vertically */
+    left: 200px; /* Adjust this value to move the button horizontally */
+    background-color:#000000;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+       
+       
+    </style>
+</head>
+<body>
+    <h1>PYTHON</h1>
+
+    <form action="submit_quiz.php" method="POST">
+        <div class="question">
+            <p>1.What are the differences between Python 2 and Python 3?</p>
+            <input type="radio" name="question1" value="a"> <label>Python 2 uses print as a statement, while Python 3 uses it as a function</label><br>
+            <input type="radio" name="question1" value="b"> <label>Python 3 has stricter syntax rules compared to Python 2.</label><br>
+            <input type="radio" name="question1" value="c"> <label> Python 2 is no longer maintained, while Python 3 is actively developed.</label><br>
+            <input type="radio" name="question1" value="d"> <label>  Python 2 and Python 3 have the same syntax and features.</label><br>
+        </div>
+
+        <div class="question">
+            <p>2.Explain the concept of object-oriented programming (OOP) in Python.</p>
+            <input type="radio" name="question2" value="a"> <label>OOP in Python emphasizes data encapsulation, inheritance, and polymorphism.</label><br>
+            <input type="radio" name="question2" value="b"> <label> OOP is not supported in Python. </label><br>
+            <input type="radio" name="question2" value="c"> <label> OOP in Python focuses only on data encapsulation.</label><br>
+            <input type="radio" name="question2" value="d"> <label>  OOP in Python is primarily based on procedural programming principles</label><br>
+        </div>
+        <div class="question">
+            <p>3.How do you handle exceptions using try-except blocks in Python?</p>
+            <input type="radio" name="question1" value="a"> <label>The try block contains the code that might raise an exception, and the except block handles the exception if it occurs.</label><br>
+            <input type="radio" name="question1" value="b"> <label> The try block is optional, and the except block is mandatory.</label><br>
+            <input type="radio" name="question1" value="c"> <label> The try block handles exceptions, and the except block contains the main code.</label><br>
+            <input type="radio" name="question1" value="d"> <label>  The except block is optional, and the try block is mandatory. </label><br>
+        </div>
+
+        <div class="question">
+            <p>4.What are the different ways to import modules in Python?</p>
+            <input type="radio" name="question2" value="a"> <label>You can import entire modules, import specific functions or classes from a module, or use aliasing for module names. </label><br>
+            <input type="radio" name="question2" value="b"> <label> You can only import entire modules in Python. </label><br>
+            <input type="radio" name="question2" value="c"> <label> You can only import specific functions or classes from a module in Python.</label><br>
+            <input type="radio" name="question2" value="d"> <label> You can only use aliasing for module names in Python.</label><br>
+        </div>
+        <div class="question">
+            <p>5.Explain the difference between list comprehension and traditional loops in Python.</p>
+            <input type="radio" name="question1" value="a"><label>List comprehension is a concise way to create lists, while traditional loops are longer and more complex.</label><br>
+            <input type="radio" name="question1" value="b"> <label>List comprehension is slower than traditional loops in Python</label><br>
+            <input type="radio" name="question1" value="c"> <label>List comprehension and traditional loops have the same syntax and functionality.</label><br>
+            <input type="radio" name="question1" value="d"> <label>List comprehension is not supported in Python.</label><br>
+        </div>
+
+        <div class="question">
+            <p>6.How do you work with files in Python? Provide examples.</p>
+            <input type="radio" name="question2" value="a"><label>You can open files using the open() function, read from them, write to them, and close them using the close() method.</label><br>
+            <input type="radio" name="question2" value="b"> <label> You can only read from files in Python, but cannot write to them.</label><br>
+            <input type="radio" name="question2" value="c"> <label>  You can only write to files in Python, but cannot read from them. </label><br>
+            <input type="radio" name="question2" value="d"> <label>You can only work with files using third-party libraries in Python  </label><br>
+        </div>
+        <div class="question">
+            <p>7.What are lambda functions in Python and how are they used?</p>
+            <input type="radio" name="question1" value="a"> <label>Lambda functions are anonymous functions defined using the lambda keyword, used primarily for short, one-line functions. </label><br>
+            <input type="radio" name="question1" value="b"> <label> Lambda functions are predefined functions in Python.</label><br>
+            <input type="radio" name="question1" value="c"> <label> Lambda functions are used for exception handling in Python.</label><br>
+            <input type="radio" name="question1" value="d"> <label>  Lambda functions are used for file operations in Python..</label><br>
+        </div>
+
+        <div class="question">
+            <p>8.Explain the purpose of the 'self' parameter in Python classes.</p>
+            <input type="radio" name="question2" value="a">  <label>The 'self' parameter refers to the instance of the class and is used to access variables and methods of the class within its scope.</label><br>
+            <input type="radio" name="question2" value="b"> <label> The 'self' parameter is optional in Python classes. </label><br>
+            <input type="radio" name="question2" value="c"> <label> The 'self' parameter is used to create multiple instances of a class. </label><br>
+            <input type="radio" name="question2" value="d"> <label>   The 'self' parameter is used to define the parent class in Python.</label><br>
+        </div>
+        <div class="question">
+            <p>9.How does Python manage memory?</p>
+            <input type="radio" name="question1" value="a"> <label>Python uses automatic memory management through garbage collection.</label><br>
+            <input type="radio" name="question1" value="b"> <label>Python requires manual memory allocation and deallocation.</label><br>
+            <input type="radio" name="question1" value="c"> <label> Python relies on the operating system for memory management. </label><br>
+            <input type="radio" name="question1" value="d"> <label>Python uses a stack-based memory management system.</label><br>
+        </div>
+
+        <div class="question">
+<p> 10.What are decorators in Python and how do they work?</p>
+            <input type="radio" name="question2" value="a"> <label> Decorators are functions that modify the behavior of other functions or methods without changing their code.</label></label><br>
+            <input type="radio" name="question2" value="b"> <label>Decorators are used to decorate user interfaces in Python.</label><br>
+            <input type="radio" name="question2" value="c"> <label>Decorators are used to handle exceptions in Python.</label><br>
+            <input type="radio" name="question2" value="d"> <label>Decorators are used to create graphical user interfaces in Python.</label><br>
+        </div>
+
+        <!-- Repeat the above pattern for the remaining questions -->
+
+      
+    </form>
+<form action="link1.html" >
+<button class="button">Submit</button></form>
+</body>
+</html>

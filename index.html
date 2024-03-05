@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+         .button {
+    position: absolute; /* or relative, fixed, etc. */
+    top: 1420px; /* Adjust this value to move the button vertically */
+    left: 200px; /* Adjust this value to move the button horizontally */
+    background-color:#000000;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+
+    <h1>NATIONAL KNOWLEDGE</h1>
+
+    <form action="submit_quiz.php" method="POST">
+        <div class="question">
+            <p>1. In which year did India gain independence from British rule?</p>
+            <input type="radio" name="question1" value="a"> <label>1947</label><br>
+            <input type="radio" name="question1" value="b"> <label>1950</label><br>
+            <input type="radio" name="question1" value="c"> <label>1942</label><br>
+            <input type="radio" name="question1" value="d"> <label>1965</label><br>
+        </div>
+
+        <div class="question">
+            <p>2.Who wrote the Indian national anthem, "Jana Gana Mana"?</p>
+            <input type="radio" name="question2" value="a"> <label>Rabindranath Tagore</label><br>
+            <input type="radio" name="question2" value="b"> <label>Mahatma Gandhi</label><br>
+            <input type="radio" name="question2" value="c"> <label>Subhas Chandra Bose</label><br>
+            <input type="radio" name="question2" value="d"> <label>Jawaharlal Nehru</label><br>
+        </div>
+        <div class="question">
+            <p>3.What is the highest mountain peak in India?</p>
+            <input type="radio" name="question1" value="a"> <label>Mount Everest</label><br>
+            <input type="radio" name="question1" value="b"> <label>K2</label><br>
+            <input type="radio" name="question1" value="c"> <label>Kanchenjunga</label><br>
+            <input type="radio" name="question1" value="d"> <label>Nanda Devi</label><br>
+        </div>
+
+        <div class="question">
+            <p>4.Which Indian state is known as the "Land of Five Rivers"?</p>
+            <input type="radio" name="question2" value="a"> <label>Punjab</label><br>
+            <input type="radio" name="question2" value="b"> <label>Gujarath</label><br>
+            <input type="radio" name="question2" value="c"> <label>Bihar</label><br>
+            <input type="radio" name="question2" value="d"> <label>Rajasthan</label><br>
+        </div>
+        <div class="question">
+            <p>5.Who is known as the "Father of the Indian Constitution"?</p>
+            <input type="radio" name="question1" value="a"><label>Jawaharlal Nehrul</label></label><br>
+            <input type="radio" name="question1" value="b"> <label> Mahatma Gandhi</label><br>
+            <input type="radio" name="question1" value="c"> <label> Dr. B.R. Ambedkar</label><br>
+            <input type="radio" name="question1" value="d"> <label>Sardar Vallabhbhai Patel</label><br>
+        </div>
+
+        <div class="question">
+            <p>6.What is the largest state in India by area?</p>
+            <input type="radio" name="question2" value="a"><label>Maharashtra</label><br>
+            <input type="radio" name="question2" value="b"> <label>Uttar Pradesh</label><br>
+            <input type="radio" name="question2" value="c"> <label> Rajasthan</label><br>
+            <input type="radio" name="question2" value="d"> <label> Madhya Pradesh</label><br>
+        </div>
+        <div class="question">
+            <p>7.What is the national emblem of India?</p>
+            <input type="radio" name="question1" value="a"> <label>Lotus</label><br>
+            <input type="radio" name="question1" value="b"> <label>Ashoka Chakra</label><br>
+            <input type="radio" name="question1" value="c"> <label>Lion Capital of Ashoka</label><br>
+            <input type="radio" name="question1" value="d"> <label> Tricolor Flag</label><br>
+        </div>
+
+        <div class="question">
+            <p>8.Which Indian city is famous for its film industry, Bollywood?</p>
+            <input type="radio" name="question2" value="a"> Mumbai <label></label><br>
+            <input type="radio" name="question2" value="b"> <label> Kolkata</label><br>
+            <input type="radio" name="question2" value="c"> <label>Chennai</label><br>
+            <input type="radio" name="question2" value="d"> <label>Bengaluru</label><br>
+        </div>
+        <div class="question">
+            <p>9.Who was the spiritual and political leader known as the "Mahatma"?</p>
+            <input type="radio" name="question1" value="a"> <label>Jawaharlal Nehru</label><br>
+            <input type="radio" name="question1" value="b"> <label> Subhas Chandra Bose</label><br>
+            <input type="radio" name="question1" value="c"> <label>Mahatma Gandhi</label><br>
+            <input type="radio" name="question1" value="d"> <label>Bhagat Singh</label><br>
+        </div>
+
+        <div class="question">
+            <p>10.What is the name of the highest civilian award in India?</p>
+            <input type="radio" name="question2" value="a"> <label> Bharat Ratna</label></label><br>
+            <input type="radio" name="question2" value="b"> <label>Padma Bhushan</label><br>
+            <input type="radio" name="question2" value="c"> <label>Padma Vibhushan</label><br>
+            <input type="radio" name="question2" value="d"> <label>Padma Shri</label><br>
+        </div>
+
+        <!-- Repeat the above pattern for the remaining questions -->
+
+    </form>
+<form action="link1.html" >
+<button class="button">Submit</button></form>
+</body>
+</html>
